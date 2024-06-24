@@ -61,9 +61,6 @@ CREATE TABLE `like_post` (
 -- Dumping data for table `like_post`
 --
 
-INSERT INTO `like_post` (`lid`, `pid`, `uid`) VALUES
-(13, 29, 1);
-
 -- --------------------------------------------------------
 
 --
@@ -83,21 +80,7 @@ CREATE TABLE `posts` (
 
 --
 -- Dumping data for table `posts`
---
-
-INSERT INTO `posts` (`pid`, `pTitle`, `pContent`, `pCode`, `pPic`, `pDate`, `catId`, `userId`) VALUES
-(28, 'What is Class in Java?', 'Class is collection of methods and properties.', 'package com.tech.blog.entities;\r\n\r\npublic class User {\r\n    private int id;\r\n    private String name;\r\n    private String email;\r\n    private String password;\r\n    private String gender;\r\n    private String about;\r\n    \r\n    public User() {\r\n    }\r\n    \r\n    public User(int id, String name, String email, String password, String gender, String about) {\r\n        this.id = id;\r\n        this.name = name;\r\n        this.email = email;\r\n        this.password = password;\r\n        this.gender = gender;\r\n        this.about = about;\r\n    }\r\n\r\n    public User(String name, String email, String password, String gender, String about) {\r\n        this.name = name;\r\n        this.email = email;\r\n        this.password = password;\r\n        this.gender = gender;\r\n        this.about = about;\r\n    }\r\n    \r\n    //    getter and setter\r\n    public int getId() {\r\n        return id;\r\n    }\r\n\r\n    public void setId(int id) {\r\n        this.id = id;\r\n    }\r\n\r\n    public String getName() {\r\n        return name;\r\n    }\r\n\r\n    public void setName(String name) {\r\n        this.name = name;\r\n    }\r\n\r\n    public String getEmail() {\r\n        return email;\r\n    }\r\n\r\n    public void setEmail(String email) {\r\n        this.email = email;\r\n    }\r\n\r\n    public String getPassword() {\r\n        return password;\r\n    }\r\n\r\n    public void setPassword(String password) {\r\n        this.password = password;\r\n    }\r\n\r\n    public String getGender() {\r\n        return gender;\r\n    }\r\n\r\n    public void setGender(String gender) {\r\n        this.gender = gender;\r\n    }\r\n\r\n    public String getAbout() {\r\n        return about;\r\n    }\r\n\r\n    public void setAbout(String about) {\r\n        this.about = about;\r\n    }\r\n\r\n    @Override\r\n    public String toString() {\r\n        return \"User{\" + \"name=\" + name + \", email=\" + email + \", password=\" + password + \", gender=\" + gender + \", about=\" + about + \'}\';\r\n    }\r\n}\r\n', '7.png', '2024-06-23 17:03:41', 1, 1),
-(29, 'What is Object in Java?', 'Object is instance of class.', '// Create a Post object and save it to the database\r\n            Post p = new Post(pTitle, pContent, pCode, fileName, null, cid, user.getId());\r\n            PostDao dao = new PostDao(ConnectionProvider.getConnection());\r\n            ', '1.png', '2024-06-23 17:05:19', 1, 1),
-(30, 'What is Collection in java?', 'Collection is pre-defined generic data varibles.', '', '1.png', '2024-06-23 17:07:08', 1, 1),
-(31, 'What is Website?', 'Website is collections of Web pages.', '', 'Screenshot (53).png', '2024-06-23 17:08:14', 3, 1),
-(32, 'What is Bootstrap?', 'Bootstrap is framework used for easily design websites.', '', '', '2024-06-23 17:09:14', 3, 1),
-(33, 'Responsive WebSite', 'Responsive website ', '', 'Screenshot (51).png', '2024-06-23 17:10:04', 3, 1),
-(34, 'What is Database?', 'Database is collection of Tables.', '', '4.jpeg', '2024-06-23 17:10:50', 4, 1),
-(35, 'What is DataGrid in Database?', 'DataGridView', '', '8.jpeg', '2024-06-23 17:11:28', 4, 1),
-(36, 'What is Python Programming?', 'Python is programming language used for machine learning.', '', '2.png', '2024-06-23 17:12:44', 2, 1),
-(37, 'What is Table?', 'Table is Collection of rows and columns', '', '', '2024-06-23 17:30:58', 4, 1);
-
--- --------------------------------------------------------
+-----------------------------------------
 
 --
 -- Table structure for table `user`
@@ -116,18 +99,6 @@ CREATE TABLE `user` (
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`id`, `name`, `email`, `password`, `gender`, `about`) VALUES
-(1, 'parth Vekariya', 'parth123@gmail.com', '12345', 'male', 'my name is parth vekariya.\r\n                                        '),
-(2, 'admin', 'sample@gmail.com', '12345', 'male', 'hello world'),
-(3, 'rohan', 'rohan123@gmail.com', '12345', 'male', 'hello world'),
-(5, 'hjk', 'p123@gmail.com', '1235', 'male', 'moj'),
-(6, 'hdsjkab', 'p1shicah3@gmail.com', '1235skajc', 'female', 'mojjkhxcjh'),
-(7, 'ncjkbsd', 'ndcjksc@gmail.com', '3543135', 'female', 'nhjvgh'),
-(8, 'mdklsxj', 'd.skjvibhb@gmail.com', 'dhvcsyjsnsk', 'female', 'dsmckljnd'),
-(9, 'dshjxbhcn', 'sdxjkchbm@gmail.com', 'jdcihvnk', 'female', 'sjiuychdj'),
-(10, 'hardik', 'hk123@gmail.com', '', 'male', 'hii');
-
---
 -- Indexes for dumped tables
 --
 
