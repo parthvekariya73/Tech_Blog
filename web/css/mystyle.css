@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.primary-background{
+    background: #088178 !important;
+}
+.primary-background2 {
+    background: #E3E6F3 !important;
+}
+.banner-background{
+    clip-path: polygon(55% 0, 92% 0, 100% 0, 100% 100%, 80% 95%, 50% 100%, 24% 95%, 0 100%, 0 0, 22% 0);
+}
+
+  /* Global Styles */
+   h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+  }
+  h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+  }
+  h4 {
+    font-size: 20px;
+    color: #222;
+  }
+  h6{
+    font-weight: 300;
+  }
+  p {
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+  }
+  
+/*navbar*/
+  #navv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background: #E3E6F3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+ }
+ #nav-title{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease
+ }
+ .navbar-ul li{
+    list-style: none;
+    padding: 0 10px;
+    position: relative;
+ }
+ .navbar-ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+ }
+ .navbar-ul li a:hover,
+ .navbar-ul li a.active{
+    color: #088174;
+ }
+ .navbar-ul li a.active::after,
+ .navbar-ul li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+ }
+ 
+ /* Home apge */
+ #hero{
+  height: 60vh;
+  width: 100%;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+ }
+ #hero h1{
+  padding-bottom: 15px;
+  color: #088178;
+ }
+ #hero p {
+    font-size: 17px;
+    color: #465b52;
+    font-weight: 500;
+ }
+ #hero a{
+  color: #088178;
+  border: 0;
+  padding: 10px 50px 10px 45px;
+  cursor: pointer;
+  border: 1px solid #088178;
+  font-weight: 700;
+  font-size: 15px;
+  transition: 0.5s ease;
+ }
+ #hero a:hover{
+     background-color: #088178; 
+     color: #E3E6F3;
+ }
+ #posts h4{
+     font-weight: 200;
+     font-size: 30px;
+     color: #1a1a1a;
+ }
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+@media only screen and (max-width: 1000px) {
+    #hero {
+        height: 70vh;
+    }
+}
+@media only screen and (max-width: 770px) {
+    #hero {
+        height: 95vh;
+    }
+    .banner-background{
+        clip-path: none;
+    }
+}
+@media only screen and (max-width: 530px) {
+    #hero {
+        height: 105vh;
+    }
+    .hero-btn{
+        margin-top: 20px;
+    }
+}
+@media only screen and (max-width: 440px) {
+    .banner-background {
+        height: 140vh;
+    }
+    .hero-btn a {
+        margin-top: 10px;
+    }
+}
+@media only screen and (max-width: 440px) {
+    .banner-background {
+        height: 170vh;
+    }
+}
